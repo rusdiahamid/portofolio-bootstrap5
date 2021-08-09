@@ -13,6 +13,20 @@
   <!-- bootstrap icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.4/css/lightgallery.min.css"
+    integrity="sha512-7eMiZQKgls1r8jcWf35rP5ZNgaaZzSt+ZacRjKZYP0s65Kcj7IdG5412uQn370Ne2dAqn+eOGK3yN4XU6gdt8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.4/css/lg-zoom.min.css"
+    integrity="sha512-SGo05yQXwPFKXE+GtWCn7J4OZQBaQIakZSxQSqUyVWqO0TAv3gaF/Vox1FmG4IyXJWDwu/lXzXqPOnfX1va0+A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.4/css/lg-thumbnail.min.css"
+    integrity="sha512-wHHBD+hSImJWcX192FT77uzFT4pVJDZ5sTiVYE3cArMtIix9lycXS0lvuLwRVyyFQO4pTj7MKxSuFKFMVzjK2w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
 
@@ -166,45 +180,23 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://source.unsplash.com/1600x899/?nature,water" class="card-img-top" alt="Gallery">
-          </div>
+        <div class="text-center" id="lightgallery">
+          <a href="img/projects/1.jpg" data-lg-size="1600-2400">
+            <img src=" img/projects/1.jpg" width="200px">
+          </a>
+          <a href="img/projects/2.jpg" data-lg-size="1600-2400">
+            <img src=" img/projects/2.jpg" width="200px">
+          </a>
+          <a href="img/projects/3.jpg" data-lg-size="1600-2400">
+            <img src=" img/projects/3.jpg" width="200px">
+          </a>
+          <a href="img/projects/4.jpg" data-lg-size="1600-2400">
+            <img src=" img/projects/4.jpg" width="200px">
+          </a>
+          <a href="img/projects/5.jpg" data-lg-size="1600-2400">
+            <img src=" img/projects/5.jpg" width="200px">
+          </a>
         </div>
-
-
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://source.unsplash.com/1600x900/?nature" class="card-img-top" alt="Gallery">
-          </div>
-        </div>
-
-
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://source.unsplash.com/1600x901/?nature" class="card-img-top" alt="Gallery">
-          </div>
-        </div>
-
-
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://source.unsplash.com/1600x902/?nature" class="card-img-top" alt="Gallery">
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://source.unsplash.com/1600x903/?nature" class="card-img-top" alt="Gallery">
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://source.unsplash.com/1600x904/?nature" class="card-img-top" alt="Gallery">
-          </div>
-        </div>
-      </div>
   </section>
   <!-- Akhir Galley -->
 
@@ -254,6 +246,26 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.4/lightgallery.umd.min.js"
+    integrity="sha512-76gx5hx7YwMGkIQuLtUqdpMfzJ8+xv76OVb+mzv1nOfCe5VPWb03HLfTHzjM43UPwYe2wzs5gsPmij0YUKeQCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.4/plugins/thumbnail/lg-thumbnail.umd.min.js"
+    integrity="sha512-v+/cnd6XTt28XV37rip+QRMB9OTYr90c3TxqNLLZZSH7cfoirS2N6bt9HRvlbyRnhco/vBK5pUCJdaIpS+fuhw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.4/plugins/zoom/lg-zoom.umd.min.js"
+    integrity="sha512-tsHizMJz7GXRtFlS1e1L68a4p04Iz+fvW3v0Ee7y7ByNYHNCzhw+H4tDxthwgvCsE5SVVSK0K/Ix5+JPFLLsag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+      plugins: [lgZoom, lgThumbnail],
+      speed: 500
+    });
   </script>
 </body>
 
