@@ -11,4 +11,8 @@ section {
   padding-top: 5rem;
 }
 
-.wave-satu {}
+.wave-satu {
+  display: none;
+  position: absolute;
+  top: 300px;
+}
